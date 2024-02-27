@@ -13,4 +13,7 @@ describe("Secuencia FizzBuzz", () => {
     it("Se retorna Fizz para numeros multiplos de 3, como el 6", () => {
         expect(FizzBuzz(6)).toEqual("Fizz");
     });
+    it("Se retorna Buzz para el numero 5", () => {
+        expect(FizzBuzz(5)).toEqual("Buzz");
+    });
 });
