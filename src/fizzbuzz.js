@@ -1,5 +1,5 @@
 function FizzBuzz(numero) {
-    return 1 + "";
+    return numero + "";
 }
 
 export default FizzBuzz;
