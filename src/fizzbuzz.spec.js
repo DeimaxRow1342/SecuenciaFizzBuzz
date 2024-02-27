@@ -1,4 +1,5 @@
 import FizzBuzz from "./fizzbuzz.js";
+import SecuenciaFizzBuzz from "./secuenciafizzbuzz.js";
 
 describe("Secuencia FizzBuzz", () => {
     it("Se retorna el mismo numero para 1 que no sigue las reglas", () => {
@@ -21,5 +22,8 @@ describe("Secuencia FizzBuzz", () => {
     });
     it("Se retorna FizzBuzz para numeros multiplos de 3 y 5, como el 15", () => {
         expect(FizzBuzz(15)).toEqual("FizzBuzz");
+    });
+    it("Se retorna una secuencia de numeros con las reglas FizzBuzz con el limite establecido", () => {
+        expect(SecuenciaFizzBuzz(15)).toEqual(["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]);
     });
 });
